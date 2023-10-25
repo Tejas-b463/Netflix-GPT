@@ -1,10 +1,11 @@
 
 import './App.css';
+import Body from "./components/Body"
 
 function App() {
   return (
    <div>
-    <h1 >Netflix GPT</h1>
+    <Body/>
    </div>
   )
 }
