@@ -80,7 +80,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <div>
         <Header />
       </div>
@@ -89,9 +89,9 @@ const Login = () => {
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="bg-opacity-80 bg-black absolute p-12 w-1/2 my-36 mx-auto right-0 left-0 text-white"
+        className="bg-opacity-80 bg-black absolute p-12 w-[30%] my-36 mx-auto right-0 left-0 text-white"
       >
-        <h1 className="font-bold text-3xl py-4">
+        <h1 className="font-bold text-3xl py-2">
           {isSignInForm ? "Sign In" : "Sign Up"}
         </h1>
         {!isSignInForm && (
@@ -116,12 +116,12 @@ const Login = () => {
         />
         <p className="text-red-500 p-4 font-bold text-xl ">{errorMessage}</p>
         <button
-          className="p-4 my-8 bg-red-700 w-full rounded"
+          className="p-4 my-2 bg-red-700 w-full rounded"
           onClick={handleButtonClick}
         >
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
-        <p className="p-4 my-2 cursor-pointer" onClick={toggleSignInForm}>
+        <p className="p-4  cursor-pointer" onClick={toggleSignInForm}>
           {isSignInForm
             ? "New to Netflix? Sign Up Now"
             : "Already Registered? Sign In Now"}
