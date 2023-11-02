@@ -21,3 +21,5 @@ export const SUPPORTED_LANGUAGES = [
     { identifier: "marathi", name: "Marathi" },
     { identifier: "spanish", name: "Spanish" }
 ]
+
+export const OPENAI_KEY = "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"
